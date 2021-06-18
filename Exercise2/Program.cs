@@ -28,7 +28,7 @@ namespace Exercise2
                 i++;
             }
 
-            max = 10;
+            max = 0;
             for (i = 0; i < 250; i++)
             {
                 if (i != 32)
@@ -40,7 +40,8 @@ namespace Exercise2
                 }
             }
 
-            Console.WriteLine("Enter a word to search {0}", (char) max);
+            Console.WriteLine("Enter a word to search ");
+            max = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Word found {0} times in the string", fre[max]);
         }
     }
